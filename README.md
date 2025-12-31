@@ -22,3 +22,15 @@ http://localhost:3000/api
 ```bash
 npm run dev
 ```
+
+### コンテナ実行手順
+実行手順
+ターミナルでこのファイルがある場所を開き、以下を実行してみてください。
+
+イメージを作る（ビルド）
+
+
+`docker build -t my-todo-app .`
+動かす（コンテナ起動）
+
+`docker run -p 3000:3000 my-todo-app`
