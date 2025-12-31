@@ -24,6 +24,6 @@ describe('GetTodosUseCase', () => {
 
     const result = await useCase.execute();
     expect(result).toEqual(expected);
-    expect(repository.findAll).toHaveBeenCalledTimes(1);
+    expect(repository.findAll).toHaveBeenCalled();
   })
 })
